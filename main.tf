@@ -15,7 +15,7 @@ resource "tfe_team" "ops" {
 
 resource "tfe_team_member" "dev-user" {
   team_id  = "${tfe_team.developers.id}"
-  username = "dev-user"
+  username = "codusoperandi"
 }
 
 resource "tfe_team_member" "ops-user" {

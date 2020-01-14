@@ -15,12 +15,12 @@ resource "tfe_team" "ops" {
 
 resource "tfe_team_member" "dev-user" {
   team_id  = "${tfe_team.developers.id}"
-  username = "codusoperandi"
+  username = "dev1"
 }
 
 resource "tfe_team_member" "ops-user" {
   team_id  = "${tfe_team.ops.id}"
-  username = "ops-user"
+  username = "ops1"
 }
 
 resource "tfe_team_access" "development-dev" {

@@ -63,7 +63,7 @@ resource "tfe_workspace" "development" {
   name         = "${var.use_case_name}-development"
   organization = "${var.org}"
   auto_apply   = true
-  queue_all_runs = false
+  queue_all_runs = true
   terraform_version = "0.12.19"
 
   vcs_repo {
